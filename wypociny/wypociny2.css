@@ -1,0 +1,196 @@
+*
+{
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.span1 
+{
+    font-size: 80px;
+    background-color: whitesmoke;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+#input
+{
+    background-color: white;
+    width: auto;
+    height: 100px;
+}
+
+
+.box
+{
+    border: 1px solid black;
+    margin: 0.3%;
+    /*box-sizing: border-box;*/
+    border-radius: 10px;
+    background-color: whitesmoke;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+.slidemenu
+{
+    display: flex;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: auto;
+    font-size: calc(15px + 0.3vw);
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+.slidemenu:hover
+{
+
+    background-color: rgb(175, 175, 175);
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgba(130, 130, 130, 0.8);
+    
+    
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#header
+{
+   
+    font-size: larger;
+    order: 1;
+    width: auto;
+    height: 150px;
+    justify-content: center;
+    
+    align-items: center;
+    /*text-shadow: 0px 0px 25px black;*/
+    animation: breathe 5s infinite;
+}
+
+@keyframes breathe 
+{
+   50% {text-shadow: 0px 0px 25px black;}
+}
+
+#sub1
+{
+
+    display: flex;
+    order: 2;
+    height: 510px;
+}
+
+#sidebar
+{
+    
+    display: flex;
+    /*flex-direction: column;*/
+    /*order: 2;*/
+    max-width: 50px;
+    height: 50px;
+    float: inline-start;
+    flex: 1;
+    
+}
+
+#content
+{
+    order: 3;
+    height: 500px; 
+    width: auto;
+    flex: 1;
+    /*top: 100px;*/
+    float: inline-end; 
+}
+
+
+
+#sidebar:hover
+{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    max-width: 15%;
+    height: 500px;
+    flex: 1; 
+    transition: all .3s linear;   
+}
+
+#like_button_container
+{
+    background-color: white;
+}
+
+#footer
+{
+    font-size: 16px;
+    font-style: italic;
+    order: 3;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#chatbox
+{
+    height: 350px;
+}
+
+#messageBox
+{
+    height: 350px;
+    border: 1px solid black;
+    margin: 0.3%;
+    /*box-sizing: border-box;*/
+    border-radius: 10px;
+    background-color: whitesmoke;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+#chatInput
+{
+    /*justify-self: stretch;*/
+    width: 100%;
+    text-align: left;
+}
+
+#sendButton
+{
+    justify-self: end;
+}
+
+#chatBox
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#comBox
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post
+{
+    border: 1px solid black;
+    margin: 0.3%;
+    padding: 0.5%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: left;
+    width: fit-content;
+}
